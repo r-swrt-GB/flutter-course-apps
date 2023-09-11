@@ -1,59 +1,24 @@
-import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:clima/screens/loading_screen.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:loader_overlay/loader_overlay.dart';
 
-void main() {
-  return runApp(
-    MaterialApp(
-      home: Scaffold(
-        backgroundColor: Colors.red,
-        appBar: AppBar(
-          title: Text('Dice'),
-          backgroundColor: Colors.red,
-        ),
-        body: DicePage(),
-      ),
-    ),
-  );
-}
+void main() => runApp(MyApp());
 
-class DicePage extends StatefulWidget {
-  const DicePage({Key key}) : super(key: key);
-
-  @override
-  State<DicePage> createState() => _DicePageState();
-}
-
-class _DicePageState extends State<DicePage> {
-  int leftDice = 1, rightDice = 1;
-  void updateDice() async {
-    setState(() {
-      leftDice = Random().nextInt(6) + 1;
-      rightDice = Random().nextInt(6) + 1;
-    });
-  }
-
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Row(
-        children: [
-          Expanded(
-            child: TextButton(
-              onPressed: () {
-                updateDice();
-              },
-              child: Image.asset("images/dice$leftDice.png"),
-            ),
+    return MaterialApp(
+      theme: ThemeData.dark(),
+      home: LoaderOverlay(
+        child: LoadingScreen(),
+        useDefaultLoading: false,
+        overlayColor: Colors.black,
+        overlayWidget: Center(
+          child: SpinKitPulse(
+            color: Colors.blue,
           ),
-          Expanded(
-            child: TextButton(
-              onPressed: () {
-                updateDice();
-              },
-              child: Image.asset("images/dice$rightDice.png"),
-            ),
-          ),
-        ],
+        ),
       ),
     );
   }
