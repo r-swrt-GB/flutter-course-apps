@@ -1,8 +1,7 @@
-name: i_am_poor
+name: i_am_rich
 description: A new Flutter project.
 
 publish_to: "none"
-
 version: 1.0.0+1
 
 environment:
@@ -22,5 +21,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
   assets:
     - images/
