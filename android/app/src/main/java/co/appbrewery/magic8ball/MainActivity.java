@@ -1,4 +1,4 @@
-package co.appbrewery.bitcoin_ticker;
+package co.appbrewery.magic8ball;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

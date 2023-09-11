@@ -1,16 +1,46 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
-import 'price_screen.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(
+      MaterialApp(
+        home: Scaffold(
+          appBar: AppBar(
+            title: Text(
+              "Magic 8 Ball",
+              style: TextStyle(color: Colors.white),
+            ),
+            backgroundColor: Colors.black,
+          ),
+          body: MagicEightBall(),
+        ),
+      ),
+    );
 
-class MyApp extends StatelessWidget {
+class MagicEightBall extends StatefulWidget {
+  const MagicEightBall({Key key}) : super(key: key);
+
+  @override
+  State<MagicEightBall> createState() => _MagicEightBallState();
+}
+
+class _MagicEightBallState extends State<MagicEightBall> {
+  int answerNumber = 1;
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData.dark().copyWith(
-          primaryColor: Colors.lightBlue,
-          scaffoldBackgroundColor: Colors.white),
-      home: PriceScreen(),
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        TextButton(
+          child: Image.asset("images/ball$answerNumber.png"),
+          onPressed: () async {
+            setState(() {
+              answerNumber = Random().nextInt(5) + 1;
+            });
+          },
+        ),
+      ],
     );
   }
 }
