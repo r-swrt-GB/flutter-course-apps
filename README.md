@@ -1,19 +1,26 @@
 ![App Brewery Banner](https://github.com/londonappbrewery/Images/blob/master/AppBreweryBanner.png)
 
 
-# Magic 8 Ball 🎱
+# Xylophone 🎹
 
 ## Our Goal
 
-The objective of this challenge is to solidify what you've learn't in the Dicee tutorial. This app will guide you through the steps required to build an 8 ball app and you will be applying what you have learnt about Stateless and Stateful Flutter widgets.
+In this tutorial we will be diving into more Dart programming concepts and learning how to use open source Flutter packages. By the end of this module, you should be comfortable using Flutter packages and building repeated widgets.
 
 
 ## What you will create
 
-We’re going to make a magical 8 ball app, it will give you the answers to all the tricky questions in life. You can make the ball change at the press of a button. 
+We’re going to make a music app that plays Xylophone sounds. For every Beethoven out there, this will let you unleash your musical talent where ever you are. 
 
-![Finished App](https://github.com/londonappbrewery/Images/blob/master/8-ball-flutter-gif.gif)
+![Finished App](https://github.com/londonappbrewery/Images/blob/master/xylophone-flutter.png)
 
+## What you will learn
+
+- How to incorporate open source libraries of code into your project using Flutter Packages.
+- How to play sound on both iOS and Android.
+- How to generate repeated user interface Widgets.
+- How to use Dart functions that can take input arguments as well as return an output.
+- Dart arrow syntax for writing one line functions.
 
 >This is a companion project to The App Brewery's Complete Flutter Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
 
