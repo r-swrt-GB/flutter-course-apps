@@ -1,4 +1,4 @@
-package co.appbrewery.magic8ball;
+package co.appbrewery.quizzler;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

@@ -1,16 +1,17 @@
-name: magic_8_ball
+name: quizzler
 description: A new Flutter application.
 
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.2.2 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
   cupertino_icons: ^0.1.2
+  rflutter_alert: ^2.0.4
 
 dev_dependencies:
   flutter_test:
@@ -18,6 +19,3 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
-  assets:
-    - images/
