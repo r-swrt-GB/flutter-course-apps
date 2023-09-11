@@ -1,4 +1,4 @@
-package co.appbrewery.destinichallengestarting;
+package co.appbrewery.bmicalculator;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
